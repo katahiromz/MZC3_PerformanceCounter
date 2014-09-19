@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////
-// PerformanceCounter.h -- Win32 performance counter wrapper
+// PerformanceCounter.hpp -- Win32 performance counter wrapper
 // This file is part of MZC3.  See file "ReadMe.txt" and "License.txt".
 ////////////////////////////////////////////////////////////////////////////
 
@@ -16,7 +16,7 @@ public:
 
     // copyable
     MPerformanceCounter(const MPerformanceCounter& counter);
-    void operator=(const MPerformanceCounter& counter);
+    MPerformanceCounter& operator=(const MPerformanceCounter& counter);
 
     BOOL   Start();
     void   Restart();
@@ -43,7 +43,7 @@ protected:
 #ifndef MZC_NO_INLINING
     #undef MZC_INLINE
     #define MZC_INLINE inline
-    #include "PerformanceCounter_inl.h"
+    #include "PerformanceCounter_inl.hpp"
 #endif
 
 #endif  // ndef __MZC3_PERFORMANCECOUNTER__

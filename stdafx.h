@@ -2,4 +2,4 @@
 
 #define EXTENDS_MOBJECT /*empty*/
 
-#include "PerformanceCounter.h"
+#include "PerformanceCounter.hpp"

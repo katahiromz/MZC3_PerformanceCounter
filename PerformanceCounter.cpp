@@ -8,7 +8,7 @@
 #ifdef MZC_NO_INLINING
     #undef MZC_INLINE
     #define MZC_INLINE  /*empty*/
-    #include "PerformanceCounter_inl.h"
+    #include "PerformanceCounter_inl.hpp"
 #endif
 
 ////////////////////////////////////////////////////////////////////////////
